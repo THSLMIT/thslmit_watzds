@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.thslmit.watz.UIController.CreateAccountInstController">
+  <children>
+    <GridPane prefHeight="480.0" prefWidth="800.0" style="" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <HBox id="HBox" alignment="CENTER" spacing="5.0" style="-fx-background-color: #535761" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <children>
+            <VBox alignment="CENTER" prefHeight="339.0" prefWidth="1281.0">
+              <children>
+                <Label ellipsisString="" minHeight="96.0" prefHeight="212.0" style="-fx-padding: 0px 0 0 0;" text="Online Account Setup" textFill="WHITE">
+                  <font>
+                    <Font size="89.0" />
+                  </font>
+                </Label>
+                <Label ellipsisString="" prefHeight="101.0" prefWidth="656.0" text="Create a new caretaker account by visiting the following website on your computer’s web browser." textAlignment="CENTER" textFill="#bfbfbf" wrapText="true">
+                  <font>
+                    <Font size="26.0" />
+                  </font>
+                </Label>
+                <Label alignment="CENTER" ellipsisString="" prefHeight="101.0" prefWidth="656.0" style="-fx-padding: 50 0 0 0;" text="http://www.thslmit.com/setup" textAlignment="CENTER" textFill="#a1cfe3" wrapText="true">
+                  <font>
+                    <Font size="45.0" />
+                  </font>
+                </Label>
+              </children>
+            </VBox>
+          </children>
+        </HBox>
+        <GridPane alignment="CENTER_LEFT" style="-fx-background-color: #E1E3E5" GridPane.columnIndex="0" GridPane.rowIndex="1">
+          <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+              <children>
+                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="94.0" prefWidth="337.0" style="-fx-background-color: #E1E3E5&#10;" text="Continue 〉" textFill="#68c3e8" onMouseClicked="#nextStep">
+                  <font>
+                    <Font name="Helvetica CE Regular" size="45.0" />
+                  </font>
+                </Button>
+              </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" style="-fx-padding: 0 0 0 30px;" GridPane.columnIndex="0" GridPane.rowIndex="0">
+              <children>
+                <ImageView fx:id="getHelp" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" style="" onMouseClicked="#getHelp">
+                  <image>
+                    <Image url="@help.png" />
+                  </image>
+                </ImageView>
+              </children>
+            </HBox>
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" percentHeight="83.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+</AnchorPane>

@@ -1,0 +1,6 @@
+Execution in Terminal Command:
+/opt/jdk1.8.0/bin/java -Djavafx.platfor=eglfb -jar WATZ.jar
+
+Execution Parameters:
+DEV_MODE - Developer Mode Enable
+LOG_ENABLED - Logging Mod Enable
