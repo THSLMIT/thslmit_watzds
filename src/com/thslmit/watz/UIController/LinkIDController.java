@@ -7,15 +7,14 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 
-import com.thslmit.watz.AppVar;
-
 public class LinkIDController implements Initializable {
 	
-	@FXML Label deviceID;
+	@FXML static Label deviceID;
 	
 	public void initialize(URL location, ResourceBundle resources) {
-		
-		 
-		String devID = AppVar.getDSDevID().substring(0, 8);
+	}
+	
+	public void loadOnStart() {
+		System.out.println("LOAD");
 	}
 }

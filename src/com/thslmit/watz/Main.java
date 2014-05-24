@@ -2,6 +2,8 @@ package com.thslmit.watz;
 
 import java.util.logging.Level;
 
+import javax.swing.text.html.HTMLEditorKit.LinkController;
+
 import javafx.application.Application;
 import javafx.stage.Stage;
 

@@ -3,10 +3,12 @@ package com.thslmit.watz.UIController;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
+
+import com.thslmit.watz.AppVar;
 import com.thslmit.watz.Main;
 import com.thslmit.watz.fxml.UtFXML;
-
-import javafx.fxml.Initializable;
 
 public class CreateAccountInstController implements Initializable {
 	
