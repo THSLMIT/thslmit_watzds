@@ -26,7 +26,7 @@
                     <Font size="26.0" />
                   </font>
                 </Label>
-                <Label id="deviceID" alignment="CENTER" contentDisplay="CENTER" ellipsisString="" prefHeight="153.0" prefWidth="656.0" style="-fx-padding: 50 0 0 0;" text="" textAlignment="CENTER" textFill="#a1cfe3" wrapText="true">
+                <Label fx:id="deviceID" alignment="CENTER" contentDisplay="CENTER" ellipsisString="" prefHeight="153.0" prefWidth="656.0" style="-fx-padding: 50 0 0 0;" text="" textAlignment="CENTER" textFill="#a1cfe3" wrapText="true">
                   <font>
                     <Font size="55.0" />
                   </font>
@@ -39,7 +39,7 @@
           <children>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
               <children>
-                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="94.0" prefWidth="337.0" style="-fx-background-color: #E1E3E5&#10;" text="Continue 〉" textFill="#68c3e8">
+                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="94.0" prefWidth="337.0" style="-fx-background-color: #E1E3E5&#10;" text="Continue 〉" textFill="#68c3e8" >
                   <font>
                     <Font name="Helvetica CE Regular" size="45.0" />
                   </font>
