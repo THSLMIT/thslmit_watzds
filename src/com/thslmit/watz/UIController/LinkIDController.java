@@ -5,6 +5,7 @@ import java.util.ResourceBundle;
 
 import com.thslmit.watz.AppVar;
 import com.thslmit.watz.Main;
+import com.thslmit.watz.fxml.UtFXML;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -18,5 +19,9 @@ public class LinkIDController implements Initializable {
 	public void initialize(URL location, ResourceBundle resources) {
 		String devID = AppVar.getDSDevID().substring(0, 8);
 		deviceID.setText(devID);
+	}
+	
+	public void getHelp() {
+		Main.screenStage.getScene().setRoot(UtFXML.getParent("LinkID_help.fxml"));
 	}
 }

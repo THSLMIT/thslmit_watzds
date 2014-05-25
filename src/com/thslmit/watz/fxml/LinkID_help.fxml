@@ -8,7 +8,7 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.thslmit.watz.UIController.LinkIDController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.thslmit.watz.UIController.LinkID_helpController">
   <children>
     <GridPane prefHeight="480.0" prefWidth="800.0" style="" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
       <children>
@@ -16,19 +16,14 @@
           <children>
             <VBox alignment="CENTER" prefHeight="339.0" prefWidth="1281.0">
               <children>
-                <Label alignment="CENTER" ellipsisString="" minHeight="96.0" prefHeight="171.0" style="-fx-padding: 0px 0 0 0;" text="Account Link" textFill="WHITE">
+                <ImageView fitHeight="267.0" fitWidth="267.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@helplight.png" />
+                  </image>
+                </ImageView>
+                <Label ellipsisString="" prefHeight="307.0" prefWidth="810.0" text="Enter the ID into the online registeration form when prompted to. This allows your device to be linked to your online account." textAlignment="CENTER" textFill="#bfbfbf" wrapText="true">
                   <font>
-                    <Font size="89.0" />
-                  </font>
-                </Label>
-                <Label alignment="CENTER" ellipsisString="" prefHeight="101.0" prefWidth="656.0" text="To link your online account with this device, enter the following ID in the setup page." textAlignment="CENTER" textFill="#bfbfbf" wrapText="true">
-                  <font>
-                    <Font size="26.0" />
-                  </font>
-                </Label>
-                <Label fx:id="deviceID" alignment="CENTER" contentDisplay="CENTER" ellipsisString="" prefHeight="153.0" prefWidth="656.0" style="-fx-padding: 50 0 0 0;" text="" textAlignment="CENTER" textFill="#a1cfe3" wrapText="true">
-                  <font>
-                    <Font size="55.0" />
+                    <Font size="35.0" />
                   </font>
                 </Label>
               </children>
@@ -37,22 +32,13 @@
         </HBox>
         <GridPane alignment="CENTER_LEFT" style="-fx-background-color: #E1E3E5" GridPane.columnIndex="0" GridPane.rowIndex="1">
           <children>
-            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" style="" GridPane.columnIndex="0" GridPane.rowIndex="0">
               <children>
-                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="94.0" prefWidth="337.0" style="-fx-background-color: #E1E3E5&#10;" text="Continue 〉" textFill="#68c3e8">
+                <Button fx:id="goBack" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#goBack" prefHeight="94.0" prefWidth="260.0" style="-fx-background-color: #E1E3E5&#10;" text="〈 Back" textFill="#68c3e8">
                   <font>
                     <Font name="Helvetica CE Regular" size="45.0" />
                   </font>
                 </Button>
-              </children>
-            </HBox>
-            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" style="-fx-padding: 0 0 0 30px;" GridPane.columnIndex="0" GridPane.rowIndex="0">
-              <children>
-                <ImageView fx:id="getHelp" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#getHelp" pickOnBounds="true" preserveRatio="true" style="">
-                  <image>
-                    <Image url="@help.png" />
-                  </image>
-                </ImageView>
               </children>
             </HBox>
           </children>

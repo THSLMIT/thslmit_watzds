@@ -39,7 +39,7 @@
           <children>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
               <children>
-                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="94.0" prefWidth="337.0" style="-fx-background-color: #E1E3E5&#10;" text="Continue 〉" textFill="#68c3e8" >
+                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="94.0" prefWidth="337.0" style="-fx-background-color: #E1E3E5&#10;" text="Continue 〉" textFill="#68c3e8">
                   <font>
                     <Font name="Helvetica CE Regular" size="45.0" />
                   </font>
@@ -48,7 +48,7 @@
             </HBox>
             <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" style="-fx-padding: 0 0 0 30px;" GridPane.columnIndex="0" GridPane.rowIndex="0">
               <children>
-                <ImageView fx:id="getHelp" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" style="">
+                <ImageView fx:id="getHelp" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#getHelp" pickOnBounds="true" preserveRatio="true" style="">
                   <image>
                     <Image url="@help.png" />
                   </image>
