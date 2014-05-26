@@ -5,5 +5,6 @@
 	<classpathentry exported="true" kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
 	<classpathentry exported="true" kind="lib" path="xom-1.2.10.jar"/>
 	<classpathentry exported="true" kind="lib" path="jfxrt.jar"/>
+	<classpathentry kind="lib" path="mysql-connector-java-5.1.29-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

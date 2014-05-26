@@ -7,8 +7,6 @@ import java.sql.SQLException;
 import java.sql.SQLTransientConnectionException;
 import java.sql.Statement;
 
-import javax.naming.CommunicationException;
-
 public class MySQL {
 	
 	private Connection mysql_connection;
