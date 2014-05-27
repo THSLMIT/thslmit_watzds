@@ -28,6 +28,5 @@ public class LinkIDController implements Initializable {
 	
 	public void nextStep() {
 		Main.screenStage.getScene().setRoot(UtFXML.getParent("CheckLinkID.fxml"));
-		String linkID = AppVar.getDSDevID().substring(0, 8);
 	}
 }
