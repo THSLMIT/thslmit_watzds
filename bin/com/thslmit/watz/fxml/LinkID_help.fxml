@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.lang.*?>
+<?import java.util.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.thslmit.watz.UIController.CheckLinkIDController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.thslmit.watz.UIController.LinkID_helpController">
   <children>
     <GridPane prefHeight="480.0" prefWidth="800.0" style="" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
       <children>
@@ -13,17 +16,32 @@
           <children>
             <VBox alignment="CENTER" prefHeight="339.0" prefWidth="1281.0">
               <children>
-                <Label alignment="CENTER" ellipsisString="" prefHeight="101.0" prefWidth="656.0" text="Establishing Link With Device..." textAlignment="CENTER" textFill="#bfbfbf" wrapText="true">
+                <ImageView fitHeight="267.0" fitWidth="267.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@helplight.png" />
+                  </image>
+                </ImageView>
+                <Label ellipsisString="" prefHeight="307.0" prefWidth="810.0" text="Enter the ID into the online registeration form when prompted to. This allows your device to be linked to your online account." textAlignment="CENTER" textFill="#bfbfbf" wrapText="true">
                   <font>
-                    <Font size="32.0" />
+                    <Font size="35.0" />
                   </font>
                 </Label>
-                <ProgressIndicator prefHeight="98.0" prefWidth="1281.0" progress="-1.0" style="-fx-padding: 30px 0 0 0;" />
               </children>
             </VBox>
           </children>
         </HBox>
         <GridPane alignment="CENTER_LEFT" style="-fx-background-color: #E1E3E5" GridPane.columnIndex="0" GridPane.rowIndex="1">
+          <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" style="" GridPane.columnIndex="0" GridPane.rowIndex="0">
+              <children>
+                <Button fx:id="goBack" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#goBack" prefHeight="94.0" prefWidth="260.0" style="-fx-background-color: #E1E3E5&#10;" text="〈 Back" textFill="#68c3e8">
+                  <font>
+                    <Font name="Helvetica CE Regular" size="45.0" />
+                  </font>
+                </Button>
+              </children>
+            </HBox>
+          </children>
           <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />

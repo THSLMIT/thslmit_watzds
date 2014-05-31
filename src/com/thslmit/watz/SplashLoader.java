@@ -31,6 +31,7 @@ public class SplashLoader extends Task {
 		Platform.runLater(new Runnable() {
 			public void run() {
 				Main.fxmlChange("WelcomeScreen.fxml");
+				System.out.println("run later");
 			}
 		});
 		

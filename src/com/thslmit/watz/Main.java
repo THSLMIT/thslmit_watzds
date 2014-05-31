@@ -5,6 +5,7 @@ import java.util.logging.Level;
 import javax.swing.text.html.HTMLEditorKit.LinkController;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.stage.Stage;
 
 import com.thslmit.watz.Utilities.UtDebug;
@@ -54,6 +55,12 @@ public class Main extends Application {
 			
 			Thread th = new Thread(new SplashLoader());
 			th.start();
+			
+			Platform.runLater(new Runnable() {
+				public void run() {
+					System.out.println("run this later");
+				}
+			});
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
