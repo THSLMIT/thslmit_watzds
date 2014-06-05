@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="idleClock" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.thslmit.watz.UIController.IdleClockController">
+  <children>
+    <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #535761" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <VBox alignment="CENTER" prefHeight="480.0" prefWidth="731.0">
+               <children>
+                  <Label fx:id="time" textFill="WHITE">
+                     <font>
+                        <Font size="180.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="date" textFill="WHITE">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </Label>
+               </children>
+        </VBox>
+      </children>
+    </HBox>
+  </children>
+</AnchorPane>

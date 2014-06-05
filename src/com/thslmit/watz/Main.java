@@ -2,23 +2,21 @@ package com.thslmit.watz;
 
 import java.util.logging.Level;
 
-import javax.swing.text.html.HTMLEditorKit.LinkController;
-
 import javafx.application.Application;
-import javafx.application.Platform;
 import javafx.stage.Stage;
 
+import com.thslmit.watz.AppThread.IdleClockThread;
 import com.thslmit.watz.Utilities.UtDebug;
 import com.thslmit.watz.fxml.UtFXML;
 
 public class Main extends Application {
-	
+
 	public static Stage screenStage;
-	
+
 	public static void main(String[] args) {
 		init(args);
 	}
-	
+
 	public static void init(String[] args) {
 		try {
 			// Initial Parameter Check
@@ -29,10 +27,10 @@ public class Main extends Application {
 					if (a.equals("LOG_ENABLED")) log_mode = true;
 				}
 			}
-			
+
 			UtDebug debug = new UtDebug(dev_mode, log_mode);
 			UtDebug.logOut("WATZ Docking Station Firmware Initiated", Level.ALL);
-			
+
 			// Launch Application
 			launch(args);
 		} catch (Exception e) {
@@ -43,26 +41,23 @@ public class Main extends Application {
 	public static void fxmlChange(String fxml) {
 		screenStage.getScene().setRoot(UtFXML.getParent(fxml));
 	}
-	
+
 	public void start(Stage stage) {
 		try {
+			// Initial ScreenStage & Stage Setup
+			stage.setFullScreen(true);
 			screenStage = stage;
+			screenStage.show();
 			
 			// Initiate SplashScreen
 			screenStage.setScene(UtFXML.get("SplashScreen.fxml"));
 			stage.setFullScreen(true);
 			screenStage.show();
 			
-			Thread th = new Thread(new SplashLoader());
-			th.start();
-			
-			Platform.runLater(new Runnable() {
-				public void run() {
-					System.out.println("run this later");
-				}
-			});
-		} catch (Exception e) {
-			e.printStackTrace();
+			// Initialize IdleClockThread - Skip setup procedure...
+			Thread idleClockThread = new Thread(new IdleClockThread());
+			idleClockThread.start();
+		} catch (Exception e) {	
 		}
 	}
 }
