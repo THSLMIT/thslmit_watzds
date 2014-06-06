@@ -15,9 +15,7 @@ public class Main extends Application {
 	public static Stage screenStage;
 
 	public static void main(String[] args) {
-
-		UtSerial cereal = new UtSerial("ttyACM0");
-		// init(args);
+		init(args);
 	}
 
 	public static void init(String[] args) {
