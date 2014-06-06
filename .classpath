@@ -6,5 +6,6 @@
 	<classpathentry exported="true" kind="lib" path="xom-1.2.10.jar"/>
 	<classpathentry exported="true" kind="lib" path="jfxrt.jar"/>
 	<classpathentry kind="lib" path="mysql-connector-java-5.1.29-bin.jar"/>
+	<classpathentry kind="lib" path="RXTXcomm.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

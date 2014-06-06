@@ -7,6 +7,7 @@ import javafx.stage.Stage;
 
 import com.thslmit.watz.AppThread.IdleClockThread;
 import com.thslmit.watz.Utilities.UtDebug;
+import com.thslmit.watz.Utilities.UtSerial;
 import com.thslmit.watz.fxml.UtFXML;
 
 public class Main extends Application {
@@ -14,7 +15,9 @@ public class Main extends Application {
 	public static Stage screenStage;
 
 	public static void main(String[] args) {
-		init(args);
+
+		UtSerial cereal = new UtSerial("ttyACM0");
+		// init(args);
 	}
 
 	public static void init(String[] args) {

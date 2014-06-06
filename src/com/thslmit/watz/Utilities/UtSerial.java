@@ -31,6 +31,7 @@ public class UtSerial {
 	 */
 	public UtSerial(String port) {
 		PORT_NAME = port;
+		System.out.println("init@"+port);
 		initalize();
 	}
 	
@@ -165,13 +166,5 @@ public class UtSerial {
 					break;
 			}
 		}
-	}
-
-	/**
-	 * Use for UNIT TEST ONLY!
-	 * @param args
-	 */
-	public static void main(String[] args){
-		UtSerial cereal = new UtSerial("/dev/ttyACM0");
 	}
 }

@@ -1,5 +1,14 @@
-Execution in Terminal Command:
-/opt/jdk1.8.0/bin/java -Djavafx.platfor=eglfb -jar WATZ.jar
+[Execution Notes]
+
+1) Prerequisites:
+- Version > 1.8
+- Copy librxtxSerial.so binary under your jre environment.
+
+2) Execution in Terminal Command:
+- Must execute as root to allow usage of the serial dependecies.
+
+
+sudo /opt/jdk1.8.0/bin/java -Djavafx.platfor=eglfb -jar WATZ.jar
 
 // Initial VRAM System
 -Dprism.maxvram=90M
@@ -7,3 +16,5 @@ Execution in Terminal Command:
 Execution Parameters:
 DEV_MODE - Developer Mode Enable
 LOG_ENABLED - Logging Mod Enable
+
+
